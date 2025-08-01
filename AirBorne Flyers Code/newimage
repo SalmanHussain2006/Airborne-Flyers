@@ -1,0 +1,75 @@
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Set up display
+screen_width, screen_height = 800, 600
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Main Menu")
+
+# Load background image
+background_image = pygame.image.load("plx-2.png")
+background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
+
+# Colors
+grey = (194, 212, 240)
+black = (0, 0, 0)
+
+# Fonts
+font = pygame.font.Font(None, 36)
+
+# Button dimensions
+button_width, button_height = 250, 50
+
+# Function to display text on button
+def text_objects(text, font):
+    text_surface = font.render(text, True, black)
+    return text_surface, text_surface.get_rect()
+
+# Function to create buttons
+def button(msg, x, y, w, h, ic, ac, action=None):
+    mouse = pygame.mouse.get_pos()
+    click = pygame.mouse.get_pressed()
+
+    if x + w > mouse[0] > x and y + h > mouse[1] > y:
+        pygame.draw.rect(screen, ac, (x, y, w, h))
+        if click[0] == 1 and action is not None:
+            action()
+    else:
+        pygame.draw.rect(screen, ic, (x, y, w, h))
+
+    text_surf, text_rect = text_objects(msg, font)
+    text_rect.center = ((x + (w / 2)), (y + (h / 2)))
+    screen.blit(text_surf, text_rect)
+
+# Function to start the game (replace with your actual game code)
+def start_game():
+    print("Starting the game!")
+
+# Function to show options (replace with your options menu code)
+def show_options():
+    print("Showing options menu!")
+
+# Function to exit the game
+def exit_game():
+    pygame.quit()
+    sys.exit()
+
+# Main menu loop
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    # Display background image
+    screen.blit(background_image, (0, 0))
+
+    # Display grey buttons
+    button("Play", screen_width/2 - button_width/2, 150, button_width, button_height, grey, (200, 200, 200), start_game)
+    button("Options", screen_width/2 - button_width/2, 250, button_width, button_height, grey, (200, 200, 200), show_options)
+    button("Exit", screen_width/2 - button_width/2, 350, button_width, button_height, grey, (200, 0, 0), exit_game)
+
+    pygame.display.update()
