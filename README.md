@@ -51,7 +51,8 @@ A **retro-inspired flying game** built with **Python** and **Pygame**, featuring
 ## 🎥 Demo Video
 
 Watch the parallax effect in action:  
-[🎥 Gameplay Demo]([https://github.com/SalmanHussain2006/Airborne-Flyers/blob/main/Flyer%20with%20Parallax.mp4) 
+[🎥 Gameplay Demo]
+([https://github.com/SalmanHussain2006/Airborne-Flyers/blob/main/Flyer%20with%20Parallax.mp4) 
 You might have to download the video to view it
 
 ---
