@@ -1,36 +1,71 @@
-# 🐦 Flappy Bird Retro Game
+# 🕹 Airborne Flyers
 
-A retro-inspired **Flappy Bird clone** built with **Python & Pygame**, featuring a **GUI-based login system using AppJar** and **SQLite database for persistent high scores**.  
-The game includes **parallax scrolling**, **collision detection**, and **an in-game shop** for a dynamic and fun experience!
+A **retro-inspired flying game** built with **Python** and **Pygame**, featuring:  
+- **Login & Registration system** with AppJar  
+- **SQLite database** for storing user profiles and high scores  
+- **Dynamic parallax scrolling** for a retro aesthetic  
+- **Score & Gold system with an in-game shop** to unlock new birds  
 
 ---
 
 ## 🎮 Features
 
-- **Retro-style gameplay** with custom sprites and smooth parallax scrolling
-- **Login system with AppJar GUI**
-- **SQLite database** for storing high scores and user profiles
-- **Dynamic difficulty** that increases as the game progresses
-- **In-game shop** to purchase skins or game features (if implemented)
-- **Cross-platform support** – runs on Windows, macOS, and Linux
-
----
-
-## 🛠️ Tech Stack
-
-- **Python** – Game logic and mechanics
-- **Pygame** – Rendering and game engine
-- **AppJar** – GUI login interface
-- **SQLite** – Persistent score storage
-- **OOP principles** – Organized and modular code
+- Smooth **parallax scrolling** background  
+- **Score & Gold collection** to purchase new birds  
+- **In-game shop** with unlockable birds:
+  - 🐦 Pigeon (50 Gold)  
+  - 🦅 Falcon (100 Gold)  
+  - 🐉 Dragon (200 Gold)
+- **Login & Registration system** with persistent data using SQLite  
+- Feedback for **insufficient funds** or **already owned birds**  
+- Fun, replayable **arcade-style gameplay**  
 
 ---
 
 ## 📸 Screenshots
 
-![Main Menu](assets/main_menu.png)
-![Gameplay](assets/gameplay.png)
-![Game Over Screen](assets/game_over.png)
+### 🔑 Authentication System
+![Login Screen](<img width="742" height="557" alt="image" src="https://github.com/user-attachments/assets/4a64735e-b3da-404b-96af-52988ef5e427" />
+)  
+![Register Screen](<img width="881" height="460" alt="image" src="https://github.com/user-attachments/assets/99dc8328-be98-4adc-a665-adc28dd08065" />
+)  
+![Registration Successful](<img width="556" height="387" alt="image" src="https://github.com/user-attachments/assets/e5127234-2a3b-4355-9b9f-d8c60bd963be" />
+)  
+![Login Successful](<img width="859" height="640" alt="image" src="https://github.com/user-attachments/assets/c29642b0-e9c1-40d0-9dae-8c1dc92a39c4" />
+)  
+
+### 🕹 Gameplay
+![Main Menu](<img width="857" height="668" alt="image" src="https://github.com/user-attachments/assets/1947c4a2-63a1-4797-a93d-af88cfda2701" />
+)  
+![Mid-game](<img width="851" height="663" alt="image" src="https://github.com/user-attachments/assets/a80495c6-a3b9-4900-823a-4c0544de4a69" />
+)  
+![Game Over](<img width="860" height="660" alt="image" src="https://github.com/user-attachments/assets/79dba242-8632-40dc-b2b0-6d0c0b837694" />
+)  
+
+### 🛒 In-Game Shop
+![Shop Purchase](<img width="858" height="674" alt="image" src="https://github.com/user-attachments/assets/5006c657-6543-4cbc-87bd-c53e8403adf8" />
+)  
+![Insufficient Funds](<img width="859" height="669" alt="image" src="https://github.com/user-attachments/assets/68f36d23-d2b0-41fe-a434-2aaa89461d64" />
+)  
+
+---
+
+## 🎥 Demo Video
+
+Watch the parallax effect in action:  
+[🎥 Gameplay Demo](assets/FlyerWithParallax.mp4)
+
+*(If GitHub doesn’t preview the MP4, download to view locally.)*
+
+---
+
+## 🛠 Tech Stack
+
+- **Python** – Core game logic  
+- **Pygame** – Rendering and mechanics  
+- **AppJar** – GUI for login and registration  
+- **SQLite** – Persistent user data and high scores  
+
 
 ---
 
